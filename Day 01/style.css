@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    background-color: #23424A;
+    padding: 50px;
+
+    /* width: 900px; */
+    /* there's a side scrollbar on the page; media queries could solve this, but multiple ones are needed to completely eliminate the issue */
+    margin: 0 auto;
+    width: 80%;
+    /* this is responsive, unlike fixed widths */
+}
+
+/* on a block level, all elements have the width of 100% of the parent */
+
+.child {
+    background-color: #38CFD9;
+    /* Kevin doesn't normally include a height, so this is just for getting started. */
+    width: 50%;
+    height: 250px;
+}
