@@ -29,10 +29,9 @@ body {
   margin: 0 auto;
 
   padding: 2em;
-  height: 300px;
+  /* height: 300px; - this needs to be removed for overflow prevention*/
 }
 
 .intro-content {
   width: 50%;
-  height: 50%;
 }
