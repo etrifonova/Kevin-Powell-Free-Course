@@ -44,4 +44,13 @@ body {
 
 .container {
   background-color: #23424A;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  /* height: 300px; */
+  /* if we specify the height as above, the layout won't be responsive */
+  /* without a specific height, the layout is naturally responsive */
+  padding: 5em;
+  /* em's are relative to the parent;
+  rem's are defined by the browser default */
 }
