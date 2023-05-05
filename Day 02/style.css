@@ -1,42 +1,55 @@
-/* INSTRUCTIONS
- *
- * 1) Keep the text inside .intro-content
- *    in the same place, but have the background
- *    extend from one side of the viewport
- *    to the other, no matter how wide or narrow
- *    the browser is.
- *
- * 2) Limit the maximum width of the text in the
- *    bottom area.
- *
- * You may modify the HTML if needed
- * (you probably should for this challenge)
- *
- */
-
- * {
+* {
   box-sizing: border-box;
 }
 
+/* rems are taken from the root font-size, which is 16px for most browsers; 
+the root font-size can be specified if necessary, e.g. 
+:root {
+  font-sizeL 20px;
+} or
+html {
+  font-sizeL 20px;
+}
+
+*/
+
+
 body {
-  margin: 0;
-  font-family: sans-serif;
+  font-family: Poppins, sans-serif;
+}
+h2 {
+  font-size: 2.25rem;
 }
 
-.container {
-  /* width: 80%; */
-  /* max-width: 750px; */
-  margin: 0 auto;
-  background: #23424a;
+p, ul {
+  font-size: 1.125rem;
+}
+
+.cta {
+  background-color: #ee6352;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+}
+
+.cta__title {
+  margin: 0 0 0.5rem;
   color: white;
-  padding: 20px 20em;
 }
 
-.intro-content {
-  width: 50%;
+.cta__btn {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  background: white;
+  transition: backgorund 250ms;
+  font-size: 1.25rem;
 }
 
-.container_two {
-  background-color: white;
-  color: black;
+.cta__btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
 }
+
+/* For fonts, it's better to use rem's instead of em's */
